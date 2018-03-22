@@ -10,6 +10,19 @@ namespace PalindromeString
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please input your string");
+            string str = Console.ReadLine();
+            
+            PalindromeString strPalindrome = new PalindromeString(str);
+            
+            strPalindrome.CheckPalindrome(str);
+
+            if (strPalindrome.CheckPalindrome(str))
+                Console.WriteLine("{0} is a palindrome string", str);
+            else
+                Console.WriteLine("{0} is not a palindrome string", str);
+            
+            Console.ReadKey();
         }
     }
 }
