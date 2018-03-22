@@ -15,8 +15,6 @@ namespace PalindromeString
             
             PalindromeString strPalindrome = new PalindromeString(str);
             
-            strPalindrome.CheckPalindrome(str);
-
             if (strPalindrome.CheckPalindrome(str))
                 Console.WriteLine("{0} is a palindrome string", str);
             else
