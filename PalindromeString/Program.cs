@@ -13,13 +13,12 @@ namespace PalindromeString
             Console.WriteLine("Please input your string");
             string str = Console.ReadLine();
 
-            
-            PalindromeString strPalindrome = new PalindromeString(str);
+            PalindromeString strPalindrome = new PalindromeString();
             
             if (strPalindrome.CheckPalindrome(str))
-                Console.WriteLine("{0} is a palindrome string", str);
+                Console.WriteLine("\n'{0}' is a palindrome string", str);
             else
-                Console.WriteLine("{0} is not a palindrome string", str);
+                Console.WriteLine("\n'{0}' is not a palindrome string", str);
             
             Console.ReadKey();
         }
