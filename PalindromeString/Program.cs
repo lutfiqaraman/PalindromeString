@@ -12,6 +12,7 @@ namespace PalindromeString
         {
             Console.WriteLine("Please input your string");
             string str = Console.ReadLine();
+
             
             PalindromeString strPalindrome = new PalindromeString(str);
             

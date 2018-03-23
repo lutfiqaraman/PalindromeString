@@ -17,13 +17,14 @@ namespace PalindromeString
 
         public bool CheckPalindrome(string word)
         {
+            string lowerword = word.ToLower();
             int i = 0;
             int j = word.Length - 1;
             bool IsPalindrome = true;
-
+            
             while (i < j)
             {
-                if (word[i] != word[j])
+                if (lowerword[i] != lowerword[j])
                     IsPalindrome = false;
 
                 i++;
